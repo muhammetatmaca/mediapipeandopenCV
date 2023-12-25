@@ -23,7 +23,7 @@ while True:
     
     print(result.multi_hand_landmarks)
     
-    if result.multi_hand_landmarks:
+    if result.multi_hand_landmarks:    # landmarkslar görüldüğünde çalısır yoksa none değeri döner
         for handLms in result.multi_hand_landmarks:
             mpDraw.draw_landmarks(frame,handLms,mpHand.HAND_CONNECTIONS)
             
